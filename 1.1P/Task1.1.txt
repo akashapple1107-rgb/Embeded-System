@@ -1,0 +1,10 @@
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Project Description
+
+In this project we built a simple home lighting system using Arduino nano 33 IOT which uses one push button to control two LEDs that are as porch light and a hallway light. When the button is pressed both lights turn on. The porch light stays on for 30 seconds and then turns off, but the hallway light remains on for 30 seconds more before turning off automatically. This explains a basic automatic lighting system that could be used in a house.
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Code Overview
+
+So, the code starts by assigning pins for the porch LED, hallway LED, and push button. In the setup() function, the LEDs are configured as outputs and the button is configured as an input using the internal pull-up resistor. Both LEDs are initially off. The loop() here functions by continuously checking whether the button has been pressed or not. When the button is pressed, both LEDs turn on at the same time. After 30 seconds, the porch LED turns off. The hallway LED stays on for an additional 30 seconds and then turns off automatically.
+At last, the program waits until the button is released before allowing the system to run again for very short time. This prevents the button press from making the lighting sequence occur multiple times while it is still being pressed down.
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
